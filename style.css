@@ -5,7 +5,8 @@
   text-align: center;
 
   --primaryColor: #007bff;
-  --secondaryColor: #6c757d;
+  --secondaryColor: #f8f9fa;
+  --thirdColor: #495bb7;
   --backgroundDark: #10121a;
   --fontFamily: "Roboto", sans-serif;
 }
@@ -24,12 +25,10 @@ section {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 80%;
-  height: 60%;
+  width: 60%;
   margin: 0 auto;
   background: var(--backgroundDark);
   border-radius: 13px;
-
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
     rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
     rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
@@ -38,6 +37,16 @@ section {
   font-size: 2rem;
   color: var(--primaryColor);
   margin-top: 2rem;
+}
+
+h1 {
+  margin-bottom: 1rem;
+}
+
+p {
+  font-size: 1.2rem;
+  width: 80%;
+  margin: 0 auto;
 }
 
 form {
@@ -62,7 +71,8 @@ input:focus {
 }
 
 label {
-  text-align: left;
+  font-size: 1.2rem;
+  margin: 0.5rem 0;
 }
 
 button {
@@ -73,9 +83,15 @@ button {
   color: white;
   cursor: pointer;
   margin: 1.5rem 0.7rem;
+  transition: All 0.5s ease;
+  width: 100%;
+}
+
+button:hover {
+  background: #0056b3;
 }
 
 #total {
   margin: 8px 0;
-  background: red;
+  background: var(--thirdColor);
 }
