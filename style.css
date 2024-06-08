@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-align: center;
+
+  --primaryColor: #007bff;
+  --secondaryColor: #6c757d;
+  --backgroundDark-color: #10121a;
+  --fontFamily: "Roboto", sans-serif;
+}
+
+body {
+  font-family: var(--fontFamily);
+  background-color: var(--backgroundDark-color);
+  color: var(--secondaryColor);
+}
+
+.tipCalculate {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.titl {
+  font-size: 2rem;
+  color: var(--primaryColor);
+  margin-top: 2rem;
+}
+
+form {
+  margin-top: 2rem;
+}
+
+input {
+  width: 35%;
+  padding: 0.5rem;
+  margin: 0.5rem 0;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+}
+
+input:focus {
+  border: 1px solid var(--primaryColor);
+}
+
+button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  background: var(--primaryColor);
+  color: white;
+  cursor: pointer;
+}
